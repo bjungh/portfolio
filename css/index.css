@@ -2,7 +2,10 @@
  *{padding: 0%;margin: 0%;box-sizing: border-box;}
  ul, li{list-style: none;}
  a{text-decoration: none}
-
+ body{
+    /* font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif; */
+ }
  /* header */
  header{
      width: 100%;
@@ -36,6 +39,9 @@
  .main-menu li a{
     display: block;
     color: #333;
+ }
+ .main-menu li:hover a{
+    opacity: 0.8;
  }
  .main-title{
      width: 100%;
@@ -242,11 +248,11 @@
 }
 .mobiletitle-wrap img{
    width: 50px;
-   margin-right: 10px;
-   padding-top: 10px;
+   margin-right: 0px;
+   padding-top: 2px;
    display: inline-block;
    position: absolute;
-   left: 0;
+   left:10px ; 
    
 }   
 .mobiletitle{    
@@ -331,6 +337,7 @@
   .about p{
       padding: 15px;
       color:#333;
+      font-family: 'Noto Sans KR', sans-serif;
   }
   .about div{
       padding:10px;
