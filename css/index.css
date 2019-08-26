@@ -1,0 +1,524 @@
+    /* 공통 */
+ *{padding: 0%;margin: 0%;box-sizing: border-box;}
+ ul, li{list-style: none;}
+ a{text-decoration: none}
+
+ /* header */
+ header{
+     width: 100%;
+     height: 70px;
+     /* background: rgba(0 , 0, 0, 0.8); */
+     /* display: none; ㅋㅋ 모바일엔 있어야겠다*/
+ }
+ nav{
+     width: 90%;
+     margin: 0% auto;
+     position: relative;
+ }
+ nav h4{
+     position: absolute;
+     left: 5%;
+     color: #333;
+     line-height: 70px;
+     width: 200px;
+ }
+ .main-menu{
+     position: absolute;
+     right:5%;
+     margin-top: 25px;
+     overflow: hidden;
+ }
+ .main-menu li{
+     float: left;
+     width: 100px;
+     text-align: center;
+ }
+ .main-menu li a{
+    display: block;
+    color: #333;
+ }
+ .main-title{
+     width: 100%;
+     height: 200px;
+     margin-top: 0px;
+     margin-bottom: 50px;
+     /* background: rgb(90, 88, 88); */
+     color: #ccc;
+     position: relative;
+ }
+ .headcopy{
+    width: 490px;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    animation-duration: 3s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+.headcopy img{
+    max-width: 100%;
+}
+.is{
+    display: inline-block;
+    position: relative;
+}
+
+ .fadeInLeftBig{
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+ }
+ .fadeInDownBig{
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+ }  
+ .fadeInDown{
+     color: #f47920;
+     font-size: 1.6rem;
+     position: absolute;
+     left: 85%;top: -10%;
+     font-weight: bold;
+     animation-duration: 4s;
+     animation-delay: 5s;
+     animation-iteration-count: 1;
+ }
+ .fadeInRight{
+    animation-duration: 4s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    margin-left: 5px;
+ }
+ .text p{
+     text-align: center;
+     padding: 10px;
+     font-size: 15px;
+ }
+ .work{
+    width: 90%;
+    margin: 0% auto;
+    /* display: flex;
+    flex: 1; */
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center;
+    margin-top: 10rem;
+
+ }
+ .sub-menu{
+     width: 440px;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     overflow: hidden;
+     
+ }
+ .work-web{
+    width: 200px;
+    height: 200px;     
+    background: rgba(45, 69, 179,0.2);
+    position: relative;
+      
+    float: left;
+    margin-right: 20px;   
+ }
+ .work-web:hover{
+    background: rgba(45, 69, 179, 0.8);
+ }
+ .work-web:hover img{
+     transform: scale(1.2);
+ }
+ .work-web:hover p{
+     color: white;
+ }
+ .work-web p{
+    text-align: center;
+    padding-top: 10px;
+    color: #333;
+ }
+ .web-inner{
+     width: 90%;
+     height: 80%;
+     position: absolute;
+     right: 0%;
+     bottom: 0%;
+     overflow: hidden; 
+ }
+ .web-inner img{
+    width: 100%;
+    display: block;
+    transition: 1.2s;
+}
+ .work-mobile{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: rgba(244,121, 33, 0.2);
+    float: left;
+    margin-left: 20px;
+ }
+ .work-mobile:hover{
+    background: rgba(2244, 121,33, 0.8);
+ }
+ .work-mobile:hover img{
+     transform: scale(1.2);
+ }
+ .work-mobile:hover p{
+    color: white;
+ }
+ .work-mobile p{
+    text-align: center;
+    padding-top: 10px;
+    color: #333;
+ }
+ .mobile-inner{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    overflow: hidden; 
+    right: 0%;
+    bottom: 0%;
+ }
+ .mobile-inner img{
+     width: 100%;
+     display: block;
+     transition: 1.2s;
+ }
+ .show{
+    border: 5px solid #666; 
+ }
+ .web-gallery{
+     width: 100%;
+     margin-top: 290px;
+     position: relative;
+ }
+ .web-gallery-title{
+    overflow: hidden;
+    border-top:5px solid #666;
+    border-bottom:5px solid #666;
+    background: rgba(45, 69, 179,0.2);
+    position: relative;
+    height: 80px;
+ }
+ .webtitle-wrap{
+     width: 250px;
+     margin: 0% auto;
+     position: relative;
+ }
+ .webtitle-wrap img{
+    width: 50px;
+    margin-right: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    
+ }   
+ .pctitle{    
+    position: absolute;
+    top: 20px;
+    font-size: 1.3rem;
+    right: 0%;
+    color: #333;
+ }
+ .mobile-gallery{
+     width: 100%;
+     margin-top: 290px;
+     display: none;
+     position: relative;
+ }
+ .web-mobile-title{
+    overflow: hidden;
+    border-top:5px solid #666;
+    border-bottom:5px solid #666;
+    background: rgba(244,121, 33, 0.2); 
+    position: relative;
+    height: 80px;
+}
+.mobiletitle-wrap{
+    width: 300px;
+    margin: 0% auto;
+    position: relative;
+}
+.mobiletitle-wrap img{
+   width: 50px;
+   margin-right: 10px;
+   padding-top: 10px;
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   
+}   
+.mobiletitle{    
+   position: absolute;
+   top: 20px;
+   font-size: 1.3rem;
+   right: 0%;
+   margin-left: 30px;
+   color: #333;
+}
+
+
+#contact{
+     width: 90%;
+     /* height: 400px; */
+     background: #ccc;
+     margin: 0% auto;
+     /* text-align: center; */
+ }
+
+ .container{
+    width: 100%;
+    display: flex;
+   
+    margin: 20px auto;
+    /* margin-top: 300px; */
+    margin-bottom: 50px;
+  } 
+  .m-list{
+    flex: 1;
+    transition: 0.5s;
+  }
+  .m-list a{
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    /* border:1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .m-list a:hover img{
+    transform: scale(1.1);
+  }
+  .m-list a img{
+    width: 100%;
+    vertical-align: middle;
+    transition: 1.2s;
+  }
+
+  /* 경계라인 */
+  .line{
+      width: 100%;
+      height: 80px;
+      margin-bottom: 1rem;
+      border-top: 5px solid wheat;
+      border-bottom: 5px solid wheat;
+      text-align: center;
+  }
+  .line span{
+     line-height: 80px;
+     padding: 10px;
+  }
+
+  /* contact */
+  #contact{
+      width: 90%;
+      height: 100%;
+      margin: 0% auto;
+      background: rgb(243, 241, 241);
+      position: relative;
+  }
+  .about{
+   text-align: left;
+   width: 250px;
+   
+   left:5%;
+   margin-top: 10px;
+  
+   /* margin-bottom: 20px;
+   padding-bottom: 202px; */
+   border-left: 15px solid rgba(45, 69, 179, 0.7); 
+  }
+  
+  .about p{
+      padding: 15px;
+      color:#333;
+  }
+  .about div{
+      padding:10px;
+      color: #666;
+  }
+  .about img{
+      display: block;
+      width: 30px;
+      float: left;
+  }
+
+  .elfsight-app-2cc6b323-2807-4345-9c1b-cb26d67f2c7c{
+      width: 100%;
+      padding: 20px;
+  }
+  #disqus_thread{
+      width: 100%;
+      margin-top: 2rem;
+      padding: 20px;
+  }
+  
+
+ /* footer */
+ footer{
+     width: 100vw;
+     height: 60px;
+     /* margin-top: 1rem; */
+     background: rgba(0 , 0, 0, 0.8);
+     position: relative;
+     color: white;
+     clear: both;
+ }
+ footer .contents{
+     width: 90%;
+     margin: 0% auto;
+     position: relative;
+ }
+ footer h4{
+     position: absolute;
+     left: 0%;
+     line-height: 60px;
+     
+ }
+ footer p{
+     text-align: center;
+     line-height: 60px;
+     font-size: 14px;
+     line-height: 60px;
+ }
+
+.go-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    
+    bottom: 5%;
+    right: 0%;
+}
+.go-top a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    /* position: absolute;
+    right: 10px;
+    top: 30px; */
+    color: #333;
+}
+.go-top a i {
+    position: absolute;
+    font-size: 20px;
+    
+    /* color: #333; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 미디어쿼리 420px이하 */
+@media (max-width: 420px){
+    nav{
+        width: 100vw; 
+    }
+    .main-title{
+        width: 100vw;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .headcopy{
+        /* display: none; */
+        width: 100vw;
+        position: absolute;
+        left: 50%;top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .fadeInDown{
+        
+    }
+    section{
+         width: 100vw; 
+    }
+    .sub-menu{
+        width: 100vw; 
+        margin-top: 0%;
+    }
+    .work-web{
+        width: 49%;
+        height: 200px;
+        margin-right: 2%;
+    }
+    .work-mobile{
+        width: 49%;
+        height: 200px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .work{
+        margin-top: 0;
+    }
+    .gallery-wrap{
+        width: 100vw;
+    }
+    .web-gallery{
+        width: 100vw; 
+        margin-top: 13rem;
+    }
+    .mobile-gallery{
+        width: 100vw; 
+        margin-top: 13rem;
+    }
+    /* contact */
+    #contact{
+        width: 100vw;
+        padding: 0%;
+    }
+    .about{
+        width: 100vw;
+    }
+    .elfsight-app-2cc6b323-2807-4345-9c1b-cb26d67f2c7c{
+        width: 100vw;
+    }
+    .disqus_thread{
+        width: 100vw;
+    }
+
+    /* footer */
+    footer{
+        width: 100vw;
+    }
+    footer .contents{
+        width: 100vw;
+    }
+    .contents p{
+        text-align: right;
+    }
+    
+    .go-top {
+        position:fixed;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        bottom: 2%;
+        /* display: none; */
+       
+    }
+
+    .go-top a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid #333;
+        border-radius: 5px;
+        /* position: absolute;
+        right: 10px;
+        top: 30px; */
+        color: #333;
+    }
+    .go-top a i {
+        position: absolute;
+        font-size: 20px;
+        
+        /* color: #333; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
