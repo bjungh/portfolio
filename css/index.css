@@ -131,7 +131,7 @@
     height: 200px;     
     background: rgba(45, 69, 179,0.2);
     position: relative;
-      
+    cursor:pointer;  
     float: left;
     margin-right: 20px;   
  }
@@ -169,6 +169,7 @@
     background: rgba(244,121, 33, 0.2);
     float: left;
     margin-left: 10px;
+    cursor:pointer;
  }
  .work-mobile:hover{
     background: rgba(2244, 121,33, 0.8);
