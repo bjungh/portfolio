@@ -507,6 +507,13 @@
         /* width: 100vw;  */
         margin-top: 13rem;
     }
+    .line{
+      text-align: left;
+  }
+  .line span{
+      padding: 5px;
+      font-size:14px;
+  }
     /* contact */
     #contact{
         /* width: 100vw; */
