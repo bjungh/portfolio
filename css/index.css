@@ -283,7 +283,7 @@
  }
 
  .container{
-    width: 100%;
+    width: 90%;
     display: flex;
    
     margin: 20px auto;
@@ -526,11 +526,11 @@
     footer{
         width: 100vw;
     }
-    footer .contents{
-        /* width: 100vw; */
+    footer .contents h4{
+        display: none;
     }
     .contents p{
-        text-align: right;
+        text-align: center;
     }
     
     .go-top {
